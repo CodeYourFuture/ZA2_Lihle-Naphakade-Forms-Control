@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="description" content="This is a webpage that take information on users who want to purchase t-shirts">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,7 +38,7 @@
 <br>
         <label for="size">Select your Size:</label>
         <select name="size" id="size" required>
-            <option value="extraSmall" selected>XS</option>
+            <option value="extraSmall">XS</option>
             <option value="small">S</option>
             <option value="medium">M</option>
             <option value="large">L</option>
@@ -46,9 +47,11 @@
         </select>
 <br>
 <br>
-        <label for="deliveryDate">Delivery Date</label>
-        <input type="date" name="delivery" id="delivery" max="2022-07-12">
-        
+        <label for="delivery">Delivery Date</label>
+        <input type="date" name="delivery" id="delivery" max="2022-07-12" required>
+<br>
+<br>
+        <button>Submit</button>
     </form>
 </body>
 </html>
