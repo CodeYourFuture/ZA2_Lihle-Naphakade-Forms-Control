@@ -13,19 +13,19 @@
 <body>
     <form action="">
         <label for="firstName">Enter your name:</label>
-        <input type="text" name="firstName" id="firstName">
+        <input type="text" name="firstName" id="firstName" minlength="2" required>
 <br>
 <br>
         <label for="lastName">Enter your last name:</label>
-        <input type="text" name="lastName" id="lastName">
+        <input type="text" name="lastName" id="lastName" minlength="2" required>
 <br>
 <br>
         <label for="email">Enter your email address:</label>
-        <input type="email" name="email" id="email">
+        <input type="email" name="email" id="email" required>
 <br>
 <br>
         <p>Select your Color:</p>
-        <input type="radio" value="black" name="color" id="black">
+        <input type="radio" value="black" name="color" id="black" required>
         <label for="black">Black</label>
         <input type="radio" value="pink" name="color" id="pink">
         <label for="pink">Pink</label>
@@ -34,8 +34,8 @@
 <br>
 <br>
         <label for="size">Select your Size:</label>
-        <select name="size" id="size">
-            <option value="extraSmall">XS</option>
+        <select name="size" id="size" required>
+            <option value="extraSmall" selected>XS</option>
             <option value="small">S</option>
             <option value="medium">M</option>
             <option value="large">L</option>
@@ -45,7 +45,7 @@
 <br>
 <br>
         <label for="deliveryDate">Delivery Date</label>
-        <input type="date" name="delivery" id="delivery">
+        <input type="date" name="delivery" id="delivery" max="2022-07-12">
         
     </form>
 </body>
